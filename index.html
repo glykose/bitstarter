@@ -3,46 +3,153 @@
 <head>
 	<meta charset="utf-8">
 	<title>My first bitstarter!</title>
-	<link rel="stylesheet" type="text/css" href="https://d396qusza40orc.cloudfront.net/startup/code/bootstrap-2.3.2.css">
-	<style type="text/css">
-		body {
-			padding: 20px 0 40px 0;
-		}
-
-		.container {
-			width: 960px;
-		}
-
-		p.lead {
-			padding-top: 15px;
-		}
-
-		.navigation, .pitch, .section1, .section2, .faq, .footer {
-			padding: 10px 0 10px 0;
-		}
-
-		.video, .thermometer, .order, .social {
-			border: 1px dotted;
-			text-align: center;
-		}
-
-		.video {
-			height: 124px;
-			line-height: 124px;
-		}
-
-		.thermometer, .order, .social {
-			height: 40px;
-			line-height: 40px;
-		}
-
-		div.row {
-			border: 1px solid;
-		}
-	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://d396qusza40orc.cloudfront.net/startup/code/social-buttons.css">
+	<link rel="stylesheet" type="text/css" href="css/bitstarter.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target".nav-collaps">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="#">Bitstarter</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contant">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="container">
+		<div class="row-fluid heading">
+			<div class="span12">
+				<h1>Product</h1>
+			</div>
+		</div>
+		<div class="row-fluid subheading">
+			<div class="span12">
+				<p class="lead">Awesome.</p>
+			</div>
+		</div>
+		<div class="row-fluid pitch">
+			<div class="span5 offset1 video">
+				<img class="img-polaroid" src="http://placehold.it/480x300" />
+			</div>
+
+			<div class="span5 actions">
+				<div class="span8 offset2">
+					<div class="statistics">
+						<div class="span4">
+							<div class="linediv-l">
+								<h3>1000</h3> <p>backers</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-c">
+								<h3>$6000</h3> <p>of $10,000</p>
+							</div>
+						</div>
+						<div class="span4">
+							<div class="linediv-r">
+								<h3>10</h3> <p>days left</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="span10 offset1">
+					<div class="thermometer progress active">
+						<div class="bar bar-success" style="width: 60%;"></div>
+						<div class="bar bar-warning" style="width: 40%;"></div>
+					</div>
+				</div>
+				<div class="span6 offset3 order">
+					<button class="btn btn-success btn-large">Preorder</button>
+				</div>
+				<div class="span8 offset2 social">
+					<button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+					<button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid section1">
+			<div class="span5 offset1 asset">
+				<img class="img-polaroid" src="http://placehold.it/480x300" />
+			</div>
+			<div class="span5 copy">
+				<p>
+					Plutselig så de 75 bukker som kom over høyttaleren. De så en fjott som spillte hasardiøst ganske nært en meteor. Flere egypterer drakk da dvergen som belærte kapteinen ansatte en banditt ved bassen. Elve lysegule prester møtte fjorten sinte infanterister. Ti kroner måtte en sjef betale. 
+				</p>
+			</div>
+		</div>
+
+		<div class="row-fluid section2">
+			<div class="span5 offset1 copy copy-right">
+				<p>
+					Sjefssnuten sprayet elefanten, maneten og sabeltannkattene. Tjukkasen importerte en sjef med en supermanndrakt. Da løftet tigeren ei due usikkert. De små finnmarkingene talte i skjul. Chileneren kjøpte seg en sort monitor. Ledningen kom og pusset. Da snøfreste cowboyen skytteren høflig. Nordboeren var hurtig og stygg.
+				</p>
+			</div>
+			<div class="span5 asset">
+				<img class="img-polaroid" src="http://placehold.it/480x300" />
+			</div>
+		</div>
+
+		<div class="row-fluid faq">
+			<div class="span10 offset1">
+				<h3>FAQ</h3>
+				<div class="accordion" id="accordion2">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+								Q: What does FAQ stand for?
+							</a>
+						</div>
+						<div id="collapseOne" class="accordion-body collapse">
+							<div class="accordion-inner">
+								A: Frequently Asked Questions.
+							</div>
+						</div>
+					</div>
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+								Q: What is a Frequently Asked Question?
+							</a>
+						</div>
+						<div id="collapseTwo" class="accordion-body collapse">
+							<div class="accordion-inner">
+								A: A question commonly asked by users, lol.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-fluid footer">
+			<div class="span12">
+				<p>
+					This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0">CC By-SA 3.0</a>,
+					without all the cruft that would otherwise be put on the bottom of the page
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!--div class="container">
 		<div class="row navigation">
 			<div class="span2 logo">
 				Logo
@@ -100,6 +207,6 @@
 				Footer
 			</div>
 		</div>
-	</div>
+	</div-->
 </body>
 </html>
